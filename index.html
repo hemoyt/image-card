@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stayle.css">
+    
+    <title>card gallary</title>
+</head>
+<body>
+   
+    
+     
+    <div class="container">
+
+        <div class="slide">
+
+            
+            <div class="item" style="background-image: url(image/6.png);">
+                <div class="content">
+                    <div class="name">Ryomen Sukuna</div>
+                    <div class="des">more often referred to as simply Sukuna (宿すく儺な Sukuna?), is the stronges </div>
+                    <a href="https://jujutsu-kaisen.fandom.com/wiki/Sukuna"><button >See More</button></a>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(image/1.png);">
+                <div class="content">
+                    <div class="name">Monkey D.luffy</div>
+                    <div class="des">Monkey D. Luffy, commonly known as "Straw Hat Luffy" or simply "Straw Hat",[10] is the founder, captain, and strongest combatant of the increasingly infamous and powerful Straw Hat Pirates</div>
+                   
+                    <a href="https://onepiece.fandom.com/wiki/Monkey_D._Luffy"><button >See More</button></a>
+                </div>
+            </div>
+            <div class="item" style="background-image: url( image/2.png);">
+                <div class="content">
+                    <div class="name">Roronoa Zoro</div>
+                    <div class="des">Roronoa Zoro,[20] also known as "Pirate Hunter" Zoro,[9] is a main combatant of the Straw Hat Pirates</div>
+                    <a href="https://onepiece.fandom.com/wiki/Roronoa_Zoro"><button >See More</button></a>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(image/3.png);">
+                <div class="content">
+                    <div class="name">Itachi Uchiha</div>
+                    <div class="des">Itachi Uchiha (うちはイタチ, Uchiha Itachi) was a shinobi of Konohagakure's Uchiha clan who served as an Anbu Captain.</div>
+                    <a href="https://naruto.fandom.com/wiki/Itachi_Uchiha"><button >See More</button></a>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(image/4.png);">
+                <div class="content">
+                    <div class="name">Naruto_Uzumaki</div>  
+                    <div class="des">Naruto Uzumaki (うずまきナルト, Uzumaki Naruto) is a shinobi of Konohagakure's Uzumaki clan. He became the jinchūriki of the Nine-Tails</div>
+                    <a href="https://naruto.fandom.com/wiki/Naruto_Uzumaki"><button >See More</button></a>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(image/5.png);">
+                <div class="content">
+                    <div class="name">Satoru Gojo</div>
+                    <div class="des">Satoru Gojo (五ご条じょう悟さとる Gojō Satoru?) is one of the main protagonists of the Jujutsu Kaisen series. He is a special grade jujutsu sorcerer and widely recognized as the strongest in the world</div>
+                    <a href="https://jujutsu-kaisen.fandom.com/wiki/Satoru_Gojo"><button >See More</button></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="button">
+            <button   class="prev" ><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+    </div>
+    <script>let next = document.querySelector('.next')
+        let prev = document.querySelector('.prev')
+        
+        next.addEventListener('click', function(){
+            let items = document.querySelectorAll('.item')
+            document.querySelector('.slide').appendChild(items[0])
+        })
+        
+        prev.addEventListener('click', function(){
+            let items = document.querySelectorAll('.item')
+            document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
+        })</script>
+</body>
+</html>
