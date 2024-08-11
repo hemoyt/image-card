@@ -145,21 +145,112 @@ body{
     color: #fff;
 }
 
- @media only screen and (max-width: 1200px) {
-    .column {
-      flex-basis: 100%;
+   @media (min-width: 768px) {
+    .button {
+      width: auto;  
     }
   }
 
- @media only screen and (max-width: 768px) {
-    .column {
-      flex-basis: 50%;
-    }
+@media only screen and (max-width: 480px) {
+  /* Header */
+  header {
+    height: 50px;
+    padding: 10px;
+    text-align: center;
   }
 
-
- @media only screen and (max-width: 480px) {
-    .column {
-      flex-basis: 100%;
-    }
+  /* Navigation */
+  nav {
+    display: none;
   }
+
+  /* Main Content */
+  main {
+    padding: 20px;
+  }
+
+  /* Footer */
+  footer {
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  /* Images */
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Tablets (min-width: 481px and max-width: 768px) */
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  /* Header */
+  header {
+    height: 70px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Navigation */
+  nav {
+    display: block;
+    padding: 20px;
+  }
+
+  /* Main Content */
+  main {
+    padding: 30px;
+  }
+
+  /* Footer */
+  footer {
+    height: 70px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Images */
+  img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+/* Desktop Devices (min-width: 769px) */
+
+@media only screen and (min-width: 769px) {
+  /* Header */
+  header {
+    height: 100px;
+    padding: 30px;
+    text-align: center;
+  }
+
+  /* Navigation */
+  nav {
+    display: block;
+    padding: 30px;
+  }
+
+  /* Main Content */
+  main {
+    padding: 40px;
+  }
+
+  /* Footer */
+  footer {
+    height: 100px;
+    padding: 30px;
+    text-align: center;
+  }
+
+  /* Images */
+  img {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
